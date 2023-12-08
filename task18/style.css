@@ -20,13 +20,12 @@ header {
 
 .menu {
     display: flex;
-    justify-content: space-around;
 }
 
 .sub-menu,
 .Dropdown {
-
-    display: block;
+     display: block;
+     opacity: 0;
 }
 
 .overlay {
@@ -50,4 +49,17 @@ body {
 }
 .container{
     position: relative;
+}
+a{
+    color: white;
+}
+.menu a{
+    padding: 5px 20px;
+}
+.Dropdown:hover{
+    opacity: 1;
+    background-color: #fff;
+}
+.black{
+    color: black;
 }
