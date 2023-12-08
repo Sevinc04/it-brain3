@@ -1,0 +1,63 @@
+body {
+    background-color: #59316b;
+}
+
+.windows {
+    padding: 80px;
+    display: inline-block;
+}
+
+.apple {
+    padding: 80px;
+    display: inline-block;
+}
+
+.linux {
+    padding: 80px;
+    display: inline-block;
+}
+
+.android {
+    padding: 80px;
+    display: inline-block;
+}
+
+button {
+    background-color: #7d4698;
+    color: white;
+    width: 170px;
+    height: 40px;
+}
+
+.p2 {
+    color: white;
+    display: block;
+    margin: auto;
+    font-family: 'Source Code Pro', monospace;
+    padding-inline: 350px;
+    font-size: 20px;
+    margin: 15px;
+
+}
+
+.p1 {
+    color: white;
+    display: block;
+    font-family: 'Source Code Pro', monospace;
+    padding-inline: 315px;
+    font-size: 70px;
+    margin: 15px;
+
+}
+
+i {
+    border-radius: 400px;
+    color: white;
+    border: rgb(75, 5, 98) solid;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(75, 5, 98);
+    font-size: 120px;
+    text-align: center;
+
+}

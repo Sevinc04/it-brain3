@@ -1,0 +1,10 @@
+p{
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+    box-sizing: border-box;
+    padding: 30px;
+    border: 10px solid yellow;
+    margin: 40px;
+    outline: 40px solid blue;
+}

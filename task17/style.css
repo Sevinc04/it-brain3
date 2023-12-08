@@ -1,0 +1,82 @@
+img{
+    width: 305px;
+    height: 420px;
+    margin-bottom: 30px;
+}
+
+body{
+    width: 85%;
+   margin: 0 auto;
+   font-family: "Poppins", Arial, sans-serif;
+   background-color: #f8f8f8;
+
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.fa-brands{
+    background-color: #3d424a;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#team{
+    margin-bottom: 5px;
+    color: #ffa62b;
+    font-weight: 600;
+    display: block;
+}
+
+h1{
+    font-size: 54px;
+    font-weight: 500;
+    display: block;
+    margin-top: -1px;
+}
+
+ul{
+    position: absolute;
+    bottom: 120px;
+}
+
+.container{
+    position: relative;
+}
+p, img{
+    display: block;
+}
+
+.box{
+    padding-bottom: 30px;
+    background-color: white;
+    width: 305px;
+    transition: all 0.3s ease;
+}
+
+ul{
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+}
+ul:hover{
+    opacity: 1;
+}
+
+.box:hover{
+    background-color: #ffa62b;
+    color: white;
+}
+
+
+.col-3{
+    padding: 0px 12px;
+}

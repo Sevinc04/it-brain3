@@ -1,0 +1,48 @@
+section{
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 50px;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+
+}
+#lenovo{
+    width: 380px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+#huawei{
+    width: 400px;
+    margin: 30px 0px;
+    margin-bottom: 80px;
+}
+.red{
+    color: #b12704;
+    margin-top: -5px;
+}
+.blue{
+    color: #853ae0;
+    margin: 10px 10px 10px 0px;
+    font-weight: 900;
+    text-decoration-line: none;
+}
+.thin{
+    margin-top: -20px;
+}
+.black{
+    font-size: 12px;
+    font-style: italic;
+    color: black;
+    margin-top: 10px;
+}
+ul{
+    background-color: #ebebeb;
+    list-style: none;
+    padding: 20px;
+}
