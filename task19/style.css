@@ -18,7 +18,7 @@ body{
     margin-block-start: 150px;
 }
 .grid-container{
-    width: 55%;
+    width: 55%; 
     margin: 0 auto;
     max-width: 1140px;
     display: grid;
