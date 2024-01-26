@@ -32,7 +32,7 @@
 //?task7
 // let a = prompt("Reqem daxil edin.");
 // console.log(a**5);
-// console.log(a%3);
+// console.log(a%3);c
 
 //?task8
 // let firstName = 'Sevinc';
@@ -40,3 +40,42 @@
 // console.log(`Sizin adiniz ${firstName} ${lastName} .Tanisdigimza çox şadam!`);
 
 //?task9
+// let firstName = prompt("Enter your name");
+// let lastName = prompt("Enter your surname");
+// console.log(`Sizi bir daha görməyimizə şadiq, ${firstName} ${lastName}`);
+
+//?task10
+// let fullName = "Sevinc Valizada";
+// console.log(fullName.length-1);
+
+//?task11
+// let fullName = "Sevinc Valizada";
+// console.log(fullName[0], fullName[7]);
+
+//?task12
+// let fullName = "AD SOYAD";
+// let spaceIndex = fullName.indexOf(" ")
+// let name = fullName.slice(0, spaceIndex);
+// let surname = fullName.slice(spaceIndex + 1)
+// console.log(surname, name);
+
+//?task13
+// let name = prompt("Enter your name");
+// console.log(`Salam ${name}!`);
+
+//?task14
+// let firstNumber = prompt("Enter first number");
+// let secondNumber = prompt("Enter second number");
+// console.log(Number(firstNumber) + Number(secondNumber));
+// console.log(firstNumber - secondNumber);
+// console.log(firstNumber * secondNumber);
+// console.log(firstNumber / secondNumber);
+
+//?task15
+// let firstNumber = 12345
+// let secondNumber = 98765
+// let hasil = 12345 * 98765
+// console.log(hasil[6]);
+
+//?task16
+console.log("" + 1 + 0);
