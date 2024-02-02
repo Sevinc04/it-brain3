@@ -1,9 +1,12 @@
 //?task1
 // let i = +prompt("Ikireqemli eded daxil edin.");
 // while (i < 100) {
-//     console.log(i);
+// if (i > 92) {
+//     break;
+// }
 //     i+=7
 // }
+// console.log(i);
 
 //?task2
 // let i = +prompt("Eded daxil edin.");
@@ -41,15 +44,18 @@
 // console.log(sum);
 
 //?task6
-//! let i = prompt("eded daxil edin.");
-// while (i>1) {
-//     if (i % i === 0, i % 1 === 0) {
-//         console.log(i);
-//     } else {
-    
+// for (let n = prompt("enter the number"); n > 0; n--) {
+//     let count = 0
+//     for (let j = n; j > 0; j--) {
+//         if (n % j === 0) {
+//             count += 1;
+
+//         }
+       
 //     }
-//     i--
-    
+//     if (count === 2) {
+//         console.log(n);
+//     }
 // }
 
 
@@ -84,5 +90,14 @@
 //     console.log("Bu eded palindrome ededdir");
 // } else {
 //     console.log("Bu palindrome eded deyil");
-    
 // }
+
+//!task2
+// let i = 1
+// let n = 10
+// while (i < 11) {
+//     console.log(`${i} * ${n} = ${i * n}`);
+//     i++
+// }
+
+
