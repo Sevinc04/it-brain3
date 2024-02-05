@@ -37,22 +37,31 @@
 
 
 //?task6
-let result;
-function calc(a, b, c) {
-    switch (c) {
-        case "+":
-            result = a + b
-            break;
-         case "-":
-             result = a - b
-             break;
-         case "*":
-             result = a * b
-             break;
-         case "/":
-             result = a / b
-             break;
-    }
-    console.log(result);
-}
-calc(10, 5, "-")
+// let result;
+// function calc(a, b, c) {
+//     switch (c) {
+//         case "+":
+//             result = a + b
+//             break;
+//          case "-":
+//              result = a - b
+//              break;
+//          case "*":
+//              result = a * b
+//              break;
+//          case "/":
+//              result = a / b
+//              break;
+//     }
+//     console.log(result);
+// }
+// calc(10, 5, "-")
+
+// let users = ["Sevinc", "Xanim", "Ibrahim", "Elmin", "Nurane"]
+// for (let i = 0; i < users.length; i++) {
+//     const element = users[i];
+//     console.log(element);
+    
+// }
+
+let users = "Sevinc, Xanim, Ibrahim, Elmin, Nurane"
