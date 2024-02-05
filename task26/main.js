@@ -15,7 +15,17 @@
 
 // let text = prompt("Vergulle ayrilmis 5 eded daxil edin");
 // let textArr = text.split(",");
-// console.log(Math.min(...textArr));
+// if (textArr[0]<textArr[1] && textArr[0]<textArr[2] && textArr[0]<textArr[3] && textArr[0]<textArr[4]) {
+//     console.log(`${textArr[0]} massivin en kicik ededidir.`);
+// } else if (textArr[1]<textArr[0] && textArr[1]<textArr[2] && textArr[1]<textArr[3] && textArr[1]<textArr[4]) {
+//     console.log(`${textArr[1]} massivin en kicik ededidir.`);
+// } else if (textArr[2]<textArr[0] && textArr[2]<textArr[1] && textArr[2]<textArr[3] && textArr[2]<textArr[4]) {
+//     console.log(`${textArr[2]} massivin en kicik ededidir.`);
+// } else if (textArr[3]<textArr[0] && textArr[3]<textArr[1] && textArr[3]<textArr[2] && textArr[3]<textArr[4]) {
+//     console.log(`${textArr[3]} massivin en kicik ededidir.`);
+// } else if (textArr[4]<textArr[0] && textArr[4]<textArr[1] && textArr[4]<textArr[2] && textArr[4]<textArr[3]) {
+//     console.log(`${textArr[4]} massivin en kicik ededidir.`);
+// }
 
 //?task5
 
