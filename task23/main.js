@@ -59,6 +59,7 @@
 // let surname = fullName.slice(spaceIndex + 1)
 // console.log(surname, name);
 
+
 //?task13
 // let name = prompt("Enter your name");
 // console.log(`Salam ${name}!`);
@@ -78,4 +79,3 @@
 // console.log(hasil[6]);
 
 //?task16
-console.log("" + 1 + 0);

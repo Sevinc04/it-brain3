@@ -32,3 +32,11 @@
 // let text = '32, 31, 34, 36, 31' 
 // let textArr = text.split(",").join(';')
 // console.log(textArr);
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}
+while (condition) {
+    
+}
