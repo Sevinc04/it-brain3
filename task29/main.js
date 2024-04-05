@@ -49,9 +49,9 @@
 
 //!Task
 
-let country = ["Azeribaijan", "Georgia", "Turkiye"]
-result = country.forEach(item,index) =>{
-  let val ="o" + (index+1) + item.slice(0,3).toUpperCase();
-  return val
-}
-console.log(result);
+// let country = ["Azeribaijan", "Georgia", "Turkiye"]
+// result = country.forEach(item,index) =>{
+//   let val ="o" + (index+1) + item.slice(0,3).toUpperCase();
+//   return val
+// }
+// console.log(result);

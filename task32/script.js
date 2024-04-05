@@ -9,7 +9,7 @@ const startStopButton = document.getElementById('startStop');
 const resetButton = document.getElementById('reset');
 
 function startTimer() {
-  if (!isTimerRunning) {
+  if (!isTimerRunning) { 
     timer = setInterval(updateTimer, 1000);
     isTimerRunning = true;
     startStopButton.textContent = 'Stop';
@@ -46,3 +46,4 @@ function padTime(time) {
 
 startStopButton.addEventListener('click', startTimer);
 resetButton.addEventListener('click', resetTimer);
+
