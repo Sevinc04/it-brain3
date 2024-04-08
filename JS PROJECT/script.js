@@ -165,29 +165,33 @@ let shopGoods = [
     console.log(`Toplam qiymət: ${total}`);
   }
   
-  function adminLogin() {
-    let username = prompt("Zəhmət olmasa admin istifadəçi adını daxil edin:");
-    let password = prompt("Zəhmət olmasa admin şifrəsini daxil edin:");
-    if (username === "admin" && password === "admin123") {
+  function login(role) {
+    let username = prompt(`Zəhmət olmasa ${role} istifadəçi adını daxil edin:`);
+    let password = prompt(`Zəhmət olmasa ${role} şifrəsini daxil edin:`);
+    if (username.toLowerCase() === role.toLowerCase() && password === `${role.toLowerCase()}123`) {
       return true;
     } else {
-      console.log("Admin girişi uğursuz oldu.");
-      return false;
-    }
-  }
-  
-  function customerLogin() {
-    let username = prompt("Zəhmət olmasa alıcı istifadəçi adını daxil edin:");
-    let password = prompt("Zəhmət olmasa alıcı şifrəsini daxil edin:");
-    if (username === "alıcı" && password === "alıcı123") {
-      return true;
-    } else {
-      console.log("Alıcı girişi uğursuz oldu.");
+      console.log(`${role} girişi uğursuz oldu.`);
       return false;
     }
   }
   
   while (true) {
+    let role = prompt("Zəhmət olmasa alıcı və ya admin olduğunuzu daxil edin:");
+    if (role.toLowerCase() === "end") {
+      break;
+    }
+    
+    if (role.toLowerCase() === "admin" || role.toLowerCase() === "alıcı") {
+      let loggedIn = login(role);
+      if (!loggedIn) {
+        continue;
+      }
+    } else {
+      console.log("Yalnış rol daxil edildi.");
+      continue;
+    }
+  
     let operation = prompt("Zəhmət olmasa etmək istədiyiniz əməliyyatı seçin:\n1. Bütün malları göstər\n2. Məhsul axtar\n3. Məhsulu sil\n4. Məhsulun qiymətini dəyiş\n5. Məhsul əlavə et\n6. Malları qiyməti ilə sırala\n7. Malları adı ilə sırala\n8. Səbətə məhsul əlavə et\n9. Səbəti göstər\nEND daxil olunca proqramı bitirin");
   
     if (operation.toLowerCase() === "end") {
@@ -199,29 +203,27 @@ let shopGoods = [
         showAllProducts();
         break;
       case "2":
-        let productName = prompt("Axtardığınız məhsulun adını daxil edin:");
+        let productName = prompt("Axtarmaq istədiyiniz məhsulun adını daxil edin:");
         findProduct(productName);
         break;
       case "3":
-        if (adminLogin()) {
-          let productToRemove = prompt("Silmək istədiyiniz məhsulun adını daxil edin:");
-          removeProduct(productToRemove);
-        }
+        let productNameToRemove = prompt("Silmək istədiyiniz məhsulun adını daxil edin:");
+        removeProduct(productNameToRemove);
         break;
       case "4":
-        if (adminLogin()) {
-          let productToChange = prompt("Qiymətini dəyişmək istədiyiniz məhsulun adını daxil edin:");
-          let newPrice = parseFloat(prompt("Yeni qiyməti daxil edin:"));
-          changeProductPrice(productToChange, newPrice);
-        }
+        let productNameToChangePrice = prompt("Qiymətini dəyişmək istədiyiniz məhsulun adını daxil edin:");
+        let newPrice = parseFloat(prompt("Yeni qiyməti daxil edin:"));
+        changeProductPrice(productNameToChangePrice, newPrice);
         break;
       case "5":
-        if (adminLogin()) {
-          let storeIndex = parseInt(prompt("Məhsulu əlavə etmək istədiyiniz mağazanın indeksini daxil edin (0, 1, 2):"));
+        if (role.toLowerCase() === "admin") {
+          let storeIndex = parseInt(prompt("Məhsul əlavə edilmək istəndiyi mağazanın indeksini daxil edin (0, 1, 2):"));
           let productNameToAdd = prompt("Məhsulun adını daxil edin:");
           let productDescriptionToAdd = prompt("Məhsulun təsvirini daxil edin:");
           let productPriceToAdd = parseFloat(prompt("Məhsulun qiymətini daxil edin:"));
           addProduct(storeIndex, productNameToAdd, productDescriptionToAdd, productPriceToAdd);
+        } else {
+          console.log("Bu əməliyyat üçün admin olmaq lazımdır.");
         }
         break;
       case "6":
@@ -232,14 +234,18 @@ let shopGoods = [
         sortProductsByName();
         break;
       case "8":
-        if (customerLogin()) {
+        if (role.toLowerCase() === "alıcı") {
           let productToAddToCart = prompt("Səbətə əlavə etmək istədiyiniz məhsulun adını daxil edin:");
           addProductToCart(productToAddToCart, shoppingCart);
+        } else {
+          console.log("Bu əməliyyat üçün alıcı olmaq lazımdır.");
         }
         break;
       case "9":
-        if (customerLogin()) {
+        if (role.toLowerCase() === "alıcı") {
           showCart(shoppingCart);
+        } else {
+          console.log("Bu əməliyyat üçün alıcı olmaq lazımdır.");
         }
         break;
       default:
