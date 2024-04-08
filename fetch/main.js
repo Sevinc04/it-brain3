@@ -27,10 +27,10 @@ function domRender(param, start = 0, end = 5) {
     todosElem.innerHTML = ""
     param.forEach((item, index) => {
         if (index >= start && index < end) {
-            todosElem.innerHTML +=
+            todosElem.innerHTML +=`
                 <div class="${item.completed ? " todo completed" : "todo" }" >
                     <p>${item.todo}</p>
-                   </div > 
+                   </div > `
     }
     });
 }
